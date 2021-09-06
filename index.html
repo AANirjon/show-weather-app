@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+    <!-- BOOTSTRAP STYLESHEET -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url("images/bg-image.jpg");
+        }
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <!-- d-flex justify-content-center -->
+        <div class="col-sm-4 mx-auto all-items">
+            <!-- Title Part -->
+            <div class="app-title d-flex justify-content-center pt-4">
+                <h4>WEATHER-INFO</h4>
+            </div>
+            <hr class="m-0 hriz">
+
+            <!-- Notification Part -->
+            <div id="notification" class="d-flex justify-content-center mb-0"> </div>
+
+            <!-- Main Weather Part -->
+            <div class="weather-container mt-0">
+
+                <div class="d-flex justify-content-center mb-0 mt-4 temp-loca">
+                    <h2 id="location">-</h2>
+                </div>
+                <div id="weather-icon" class="d-flex justify-content-center">
+                    <img src="icons/unknown.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center temp-cur mb-0">
+                    <p id="temperature-value">- &deg; <span>C</span></p>
+                </div>
+                <div class="d-flex justify-content-center mt-0 pt-0 temp-desc mb-2">
+                    <h2 id="temperature-description"> - </h2>
+                </div>
+                <div class="d-flex justify-content-center mt-0 temp-dtl mb-4">
+                    <h3 id="temperature-details"> - </h3>
+                </div>
+               
+            </div>
+
+            <!-----------------------
+                USER INPUT SECTION
+             ------------------------->
+            <div class="input-group rounded-bottom pb-3">
+
+                <input id="input-field" type="text" class="form-control" placeholder="Search By City Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                <button id="button" class="btn btn-outline-warning" type="button">Search</button>
+
+              </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
